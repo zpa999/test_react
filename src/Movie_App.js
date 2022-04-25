@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import PropType from "prop-types";
 
 class Movie_App extends React.Component {
   state = {
@@ -16,11 +17,16 @@ class Movie_App extends React.Component {
     this.getMovies();
   }
   render() {
-    console.log("hi!");
     const { isLoading } = this.state;
 
     return <div>{isLoading ? "Loading..." : "We are ready"} </div>;
   }
+}
+
+Movie_App.propType = { 
+  id: PropType.number.isRequired
+  year: PropType.number.isRequired
+  title:PropType.string.
 }
 
 export default Movie_App;
