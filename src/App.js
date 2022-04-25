@@ -1,8 +1,24 @@
 import React from "react";
-import EventPractice from "./EventPractice";
+import axios from "axios";
 
-const App = () => {
-  return <EventPractice />;
-};
+class App extends React.Component {
+  state = {
+    isLoading: true,
+    movie: [],
+  };
+
+  getMovies = async () => {
+    const movies = await axios.get("https://yts.mx/api/v2/list_movies.json");
+    console.log(movies.data.data.movies);
+  };
+
+  componentDidMount() {
+    this.getMovies();
+  }
+  render() {
+    const { isLoading } = this.state;
+    return <div>{isLoading ? "Loading..." : "We are ready"} </div>;
+  }
+}
 
 export default App;
