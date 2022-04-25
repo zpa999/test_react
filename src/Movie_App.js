@@ -16,6 +16,7 @@ class Movie_App extends React.Component {
     this.getMovies();
   }
   render() {
+    console.log("hi!");
     const { isLoading } = this.state;
 
     return <div>{isLoading ? "Loading..." : "We are ready"} </div>;
