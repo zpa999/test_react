@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Movie_App from "./Movie";
+import App from "./App";
 
-ReactDOM.render(<Movie_App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
