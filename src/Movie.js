@@ -1,11 +1,16 @@
 import React from "react";
-import axios from "axios";
 import PropTypes from "prop-types";
 
-function Movie() {
-  return <h1></h1>;
+function Movie({ id, title, year, summary, poster }) {
+  return <h1>{title}</h1>;
 }
 
-Movie.prototypes = {};
+Movie.prototypes = {
+  id: PropTypes.number.isRequired,
+  year: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  poster: PropTypes.string.isRequired,
+};
 
 export default Movie;
