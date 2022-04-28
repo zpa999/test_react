@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./Movie.css";
 
 function Movie({ title, year, summary, poster }) {
+  console.log("tset!");
   return (
     <div class="movie">
       <img src={poster} alt={title} title={title} />
