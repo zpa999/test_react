@@ -28,9 +28,6 @@ class App extends React.Component {
 
     return (
       <section class="container">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Button
-        </button>
         {isLoading ? (
           <div class="loader">
             <span class="loader__text">Loading...</span>
