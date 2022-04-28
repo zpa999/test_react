@@ -9,6 +9,7 @@ function Movie({ title, year, summary, poster, genres }) {
       <div classname="movie__data">
         <h3 classname="movie__title">{title}</h3>
         <h5 classname="movie__year">{year}</h5>
+        <p className="movie__summary">{summary}</p>
 
         <ul className="movie__genres">
           {genres.map((genre, index) => {
