@@ -1,0 +1,11 @@
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.movie {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: tomato;
+}
